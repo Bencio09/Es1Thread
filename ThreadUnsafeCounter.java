@@ -13,11 +13,11 @@ public class ThreadUnsafeCounter {
     int contatore = 0;
     
     
-    public void incrementatore(){
+    public synchronized void incrementatore(){
         contatore++;
     }
     
-    public void decrementatore(){
+    public synchronized void decrementatore(){
         contatore--;
     }
     
